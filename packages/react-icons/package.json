@@ -1,8 +1,8 @@
 {
-  "name": "react-icons",
-  "version": "3.6.1",
+  "name": "react-icons-eva",
+  "version": "0.1.1",
   "description": "SVG React icons of popular icon packs using ES6 imports",
-  "author": "Goran Gajic",
+  "author": "Ben",
   "contributors": [
     "kamijin_fanta <kamijin@live.jp>"
   ],
