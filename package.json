@@ -1,6 +1,6 @@
 {
-  "name": "react-icons-root",
-  "private": true,
+  "name": "react-eva-icons",
+  "private": false,
   "workspaces": [
     "packages/*"
   ],
@@ -21,9 +21,6 @@
     "prettier": "^1.14.3"
   },
   "scripts": {
-    "submodule": "git submodule update --init --recursive",
-    "submodule-deinit": "git submodule deinit --all",
-    "netlify": "netlify",
     "lint": "node ./node_modules/eslint/bin/eslint.js .",
     "version-up": "lerna version"
   },
