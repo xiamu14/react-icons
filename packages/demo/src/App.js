@@ -3,9 +3,10 @@ import logo from "./logo.svg";
 import "./App.css";
 
 import { IconContext } from "react-icons";
-import { FaFolder } from "react-icons/fa";
-import { MdAccessibility } from "react-icons/md";
-import { TiArrowDown } from "react-icons/ti";
+// import { FaFolder } from "react-icons/fa";
+// import { MdAccessibility } from "react-icons/md";
+// import { TiArrowDown } from "react-icons/ti";
+import { EvaStarOutline, EvaPlayCircleOutline } from "react-icons/eva";
 
 class App extends Component {
   render() {
@@ -24,12 +25,14 @@ class App extends Component {
               attr: { focusable: "false" }
             }}
           >
-            <MdAccessibility />
-            <FaFolder color="red" className="additional-class-name" />
+            {/* <MdAccessibility /> */}
+            <EvaPlayCircleOutline />
+            {/* <FaFolder color="red" className="additional-class-name" /> */}
           </IconContext.Provider>
-          <MdAccessibility />
-          <FaFolder />
-          <TiArrowDown />
+          <EvaStarOutline />
+          {/* <MdAccessibility /> */}
+          {/* <FaFolder /> */}
+          {/* <TiArrowDown /> */}
         </p>
       </div>
     );

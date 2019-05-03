@@ -1,3 +1,0 @@
-[submodule "weather-icons"]
-	path = packages/react-icons/src/icons/weather-icons
-	url = https://github.com/erikflowers/weather-icons.git

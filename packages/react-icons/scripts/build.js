@@ -33,7 +33,10 @@ async function convertIconData(svg) {
         name =>
           ![
             "class",
-            ...(tagName === "svg" ? ["xmlns", "xmlns:xlink", "xml:space", "width", "height"] : []) // if tagName is svg remove size attributes
+            "data-name",
+            ...(tagName === "svg"
+              ? ["xmlns", "xmlns:xlink", "xml:space", "width", "height"]
+              : []) // if tagName is svg remove size attributes
           ].includes(name)
       )
       .reduce((obj, name) => {
@@ -55,6 +58,7 @@ async function convertIconData(svg) {
   const elementToTree = (/** @type {Cheerio} */ element) =>
     element
       .filter((_, e) => e.tagName && !["style"].includes(e.tagName))
+      .filter((_, e) => !cheerio(e).hasClass("cls-1"))
       .map((_, e) => ({
         tag: e.tagName,
         attr: attrConverter(e.attribs, e.tagName),
