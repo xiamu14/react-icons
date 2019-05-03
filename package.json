@@ -1,5 +1,5 @@
 {
-  "name": "react-eva-icons",
+  "name": "react-icons-eva",
   "private": false,
   "workspaces": [
     "packages/*"
@@ -26,5 +26,6 @@
   },
   "dependencies": {
     "camelcase": "^5.0.0"
-  }
+  },
+  "version": "0.1.0"
 }
