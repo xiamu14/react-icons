@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.2/workbox-sw.js");
 
 importScripts(
-  "https://xiamu14.github.io/react-icons-eva/precache-manifest.ae8aa8ecbb848ec831b1bf45a5658d23.js"
+  "https://xiamu14.github.io/react-icons-eva/precache-manifest.e502e0919a2f92eb45149e8d69d44740.js"
 );
 
 workbox.clientsClaim();
