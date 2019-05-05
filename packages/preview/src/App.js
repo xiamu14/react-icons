@@ -4,8 +4,8 @@ import { Route, NavLink } from "react-router-dom";
 import { Router, Switch } from "react-router";
 import { createHashHistory } from "history";
 
-import { IconsManifest, IconContext } from "react-icons";
-import * as Icons from "react-icons/all";
+import { IconsManifest, IconContext } from "react-icons-eva";
+import * as Icons from "react-icons-eva/all";
 
 import logo from "./react-icons.svg";
 import "./App.css";
@@ -37,7 +37,7 @@ class App extends Component {
             <div className="sidebar">
               <header>
                 <img src={logo} alt="react-icons" />
-                <span>react-icons</span>
+                <span>react-icons-eva</span>
               </header>
               <ul className="links">
                 <li>
@@ -84,16 +84,16 @@ class App extends Component {
                     </p>
                     <h2>Installation</h2>
                     <code>
-                      <pre>npm install react-icons --save</pre>
+                      <pre>npm install react-icons-eva --save</pre>
                     </code>
                     <h2>Usage</h2>
                     <code>
                       <pre>
-                        {`import { FaBeer } from 'react-icons/fa';
+                        {`import { EvaStarOutline } from 'react-icons-eva/eva';
 
 class Question extends React.Component {
   render() {
-    return <h3> Lets go for a <FaBeer />? </h3>
+    return <h3> Lets go for a <EvaStarOutline />? </h3>
   }
 }`}
                       </pre>
@@ -116,7 +116,11 @@ class Question extends React.Component {
                           <tr>
                             <th>License</th>
                             <td>
-                              <a href={icon.licenseUrl} target="_blank" rel="noopener noreferrer">
+                              <a
+                                href={icon.licenseUrl}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                              >
                                 {icon.license}
                               </a>
                             </td>
@@ -124,7 +128,11 @@ class Question extends React.Component {
                           <tr>
                             <th>Project</th>
                             <td>
-                              <a href={icon.projectUrl} target="_blank" rel="noopener noreferrer">
+                              <a
+                                href={icon.projectUrl}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                              >
                                 {icon.projectUrl}
                               </a>
                             </td>
@@ -134,7 +142,7 @@ class Question extends React.Component {
                       <div className="example-code">
                         <code>
                           <pre>
-                            {`import { ICON_NAME } from "react-icons/${
+                            {`import { ICON_NAME } from "react-icons-eva/${
                               icon.id
                             }";`}
                           </pre>
